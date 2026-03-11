@@ -24,7 +24,7 @@ jobs:
 
       - name: Upload arttifact
         uses: actions/upload-artifact@v4
+        if: failure()
         with:
           name: artefacto-pruebas
           path: target/
-          
